@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<title>abnerndr</title>
+		<!--Favicon-->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="public/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="public/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="public/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="public/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="public/safari-pinned-tab.svg"
+			color="#5b5bd5"
+		/>
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="theme-color" content="#ffffff" />
+		<!--CSS-->
+		<link rel="stylesheet" href="src/theme.css" />
+		<link rel="stylesheet" href="src/style.css" />
+		<link rel="stylesheet" href="src/accordion.css" />
+		<link rel="stylesheet" href="src/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="dark">
+		<!--NAV-->
+		<nav id="brand" class="nav nlight">
+			<ul class="ul">
+				<label class="switch">
+					<input type="checkbox" id="theme" />
+					<span class="slider round"></span>
+				</label>
+
+				<li><a class="nlight" href="/">Home</a></li>
+				<li><a class="nlight" href="">Sobre</a></li>
+				<!--DROPDAWN-->
+				<div class="dropdown">
+					<button class="dropbtn">Trabalhos</button>
+					<div class="dropdown-content">
+						<input type="submit" value="Web Design" onClick="location.href = './webdesign.html'">
+						<input type="submit" value="Front-End" onClick="location.href = './frontend.html'">
+						<input type="submit" value="Design Gráfico" onClick="location.href = './designgrafico.html'">
+					</div>
+				</div>
+				<!--DROPDAWN-->
+				<li><a class="nlight" href="">Contato</a></li>
+			</ul>
+		</nav>
+		<!--END NAV-->
+		<!--NAV MOBILE-->
+		<div class="bar-mobile">
+			<label class="menu-check" for="menu">
+				<input type="checkbox" id="menu" />
+				<span></span>
+			</label>
+			<label class="switch">
+				<input type="checkbox" id="theme-mobile" />
+				<span class="slider round"></span>
+			</label>
+		</div>
+		<div class="menu-mobile nlight">
+			<div class="ul">
+				<li><a class="nlight" href="">Home</a></li>
+				<li><a class="nlight" href="">Sobre</a></li>
+				<div class="dropdown">
+					<button class="dropbtn">Trabalhos</button>
+					<div class="dropdown-content">
+						<input type="submit" value="Web Design" onClick="location.href = './webdesign.html'">
+						<input type="submit" value="Front-End" onClick="location.href = './frontend.html'">
+						<input type="submit" value="Design Gráfico" onClick="location.href = './designgrafico.html'">
+					</div>
+				</div>
+				<li><a class="nlight" href="">Contato</a></li>
+			</div>
+		</div>
+
+		<!--END NAV-MOBILE-->
+		
+		<main>
+			<div class="hometitle">
+				<h1>abner a. ananias</h1>
+				<span>Developer Front-End</span>
+				<div class="barra nlight"></div>
+			</div>
+			<div class="homeimage">
+				<img src="public/116.png" alt="Abner" />
+			</div>
+			<!--CONHECIMENTO E HABILIDADES-->
+			<div class="bgatividades nlight">
+				<div class="container mt-5">
+					<div class="titulo">
+						<h2>Conhecimentos e Habilidades</h2>
+					</div>
+					<div class="row">
+						<!--Accordion-->
+						<div class="col-12 col-sm-6">
+							<div class="wrapper">
+								<!--Front End-->
+								<div class="accordion active">
+									<div class="accordion_tab active dark">
+										<i class="fas fa-laptop fa-lg"></i>
+										Front-End
+										<div class="accordion_arrow">
+											<i class="fas fa-chevron-down"></i>
+										</div>
+									</div>
+									<div class="accordion_content nlight">
+										<span>HTML5</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-orange"
+												role="progressbar"
+												style="width: 92%"
+											></div>
+										</div>
+										<li class="list-unstyled"></li>
+										<span>CSS3</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-blue"
+												role="progressbar"
+												style="width: 78%"
+											></div>
+										</div>
+
+										<span>Bootstrap</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-roxo"
+												role="progressbar"
+												style="width: 70%"
+											></div>
+										</div>
+
+										<span>AdobeXD</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-rosadark"
+												role="progressbar"
+												style="width: 55%"
+											></div>
+										</div>
+									</div>
+								</div>
+								<!--Back End-->
+								<div class="accordion">
+									<div class="accordion_tab dark">
+										<i class="fas fa-laptop-code fa-lg"></i>
+										Back-End
+										<div class="accordion_arrow">
+											<i class="fas fa-chevron-down"></i>
+										</div>
+									</div>
+									<div class="accordion_content nlight">
+										<span>JavaScript</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-js"
+												role="progressbar"
+												style="width: 40%"
+											></div>
+										</div>
+										<li class="list-unstyled"></li>
+										<span>jQuery</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-jquery"
+												role="progressbar"
+												style="width: 10%"
+											></div>
+										</div>
+
+										<span>Vue</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-vue"
+												role="progressbar"
+												style="width: 10%"
+											></div>
+										</div>
+
+										<span>Python</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-python"
+												role="progressbar"
+												style="width: 23%"
+											></div>
+										</div>
+									</div>
+								</div>
+								<!--Frameworks-->
+								<div class="accordion">
+									<div class="accordion_tab dark">
+										<i class="fas fa-atom fa-lg"></i>
+										Frameworks
+										<div class="accordion_arrow">
+											<i class="fas fa-chevron-down"></i>
+										</div>
+									</div>
+									<div class="accordion_content nlight">
+										<span>ReactJS</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-react"
+												role="progressbar"
+												style="width: 60%"
+											></div>
+										</div>
+										<li class="list-unstyled"></li>
+										<span>NextJS</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-next"
+												role="progressbar"
+												style="width: 64%"
+											></div>
+										</div>
+
+										<span>ReactNative</span>
+										<div class="progress mb-3">
+											<div
+												class="
+													progress-bar
+													bg-reactnative
+												"
+												role="progressbar"
+												style="width: 25%"
+											></div>
+										</div>
+										<span>Angular</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-angular"
+												role="progressbar"
+												style="width: 15%"
+											></div>
+										</div>
+									</div>
+								</div>
+								<!---->
+							</div>
+						</div>
+						<!--Final Grid-->
+						<div class="col-12 col-sm-6">
+							<div class="wrapper">
+								<!--Ferramentas-->
+								<div class="accordion">
+									<div class="accordion_tab dark">
+										<i class="fas fa-toolbox fa-lg"></i>
+										Ferramentas
+										<div class="accordion_arrow">
+											<i class="fas fa-chevron-down"></i>
+										</div>
+									</div>
+									<div class="accordion_content nlight">
+										<span>Git</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-git"
+												role="progressbar"
+												style="width: 55%"
+											></div>
+										</div>
+										<li class="list-unstyled"></li>
+										<span>GitHub</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-github"
+												role="progressbar"
+												style="width: 83%"
+											></div>
+										</div>
+
+										<span>Wordpress</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-wdp"
+												role="progressbar"
+												style="width: 50%"
+											></div>
+										</div>
+
+										<span>NPM</span>
+										<div class="progress mb-3">
+											<div
+												class="progress-bar bg-npm"
+												role="progressbar"
+												style="width: 75%"
+											></div>
+										</div>
+									</div>
+								</div>
+								<!--Design-->
+								<div class="accordion active">
+									<div class="accordion_tab active dark">
+										<i class="fas fa-palette fa-lg"></i>
+										Design Gráfico
+										<div class="accordion_arrow">
+											<i class="fas fa-chevron-down"></i>
+										</div>
+									</div>
+									<div class="accordion_content nlight">
+										<span>Photoshop</span>
+										<div class="progress mb-4">
+											<div
+												class="progress-bar bg-psd"
+												role="progressbar"
+												style="width: 80%"
+											></div>
+										</div>
+										<li class="list-unstyled"></li>
+										<span>Illustrator</span>
+										<div class="progress mb-4">
+											<div
+												class="progress-bar bg-ai"
+												role="progressbar"
+												style="width: 76%"
+											></div>
+										</div>
+
+										<span>CorelDRAW</span>
+										<div class="progress mb-5">
+											<div
+												class="progress-bar bg-corel"
+												role="progressbar"
+												style="width: 30%"
+											></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Accordion-->
+					</div>
+					<!--Aboutme-->
+					<div class="about">
+						<div class="container">
+							<div class="row">
+								<div class="col responsive">
+									<div class="col-8 col-sm-8">
+										<div class="about-txt dark">
+											<h3>Sobre "Abner"</h3>
+											<span
+												>Terminei o ensino médio em
+												2018, em 2019 me senti perdido
+												então resolvi não fazer nenhum
+												curso superior. Logo em 2019
+												consegui um emprego na "Temis
+												Informática" Onde trabalhava com
+												manutenção de computadores e
+												redes e suporte técnico,
+												trabalhei lá por 1 ano e 10
+												meses. Após a pandemia em 2021
+												fui demitido e me concentrei em
+												aprender novas áreas que já
+												estudava antes, resolvi abrir
+												uma pequena empresa de
+												manutenção e serviços de
+												desenvolvimento de web sites,
+												logo gostei da área e comecei a
+												me dedicar mais hoje estou
+												desempregado e em busca de uma
+												oportunidade no ramo dev. tenho
+												conhecimento em front-end e
+												linguagens como, HTML5, CSS3,
+												JavaScript, Bootstrap e AdobeXD.
+												Assim que conseguir um trabalho
+												pretendo começar minha graduação
+												na área de desenvolvimento de
+												imediato.</span
+											>
+										</div>
+									</div>
+
+									<div class="col-4 col-sm-4 about-img">
+										<img
+											src="/public/149.jpg"
+											alt="Abner"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Aboutme END-->
+					<!--Curriculo-->
+					<div class="curriculo nlight">
+						<div class="container">
+							<div class="row">
+								<div class="titlevc text-center text-uppercase mt-3">
+									<h4>Curriculo</h4>
+								</div>
+								<div class="titlename text-left mt-5 text-uppercase">
+									<h5>Abner A. Ananias </h5>
+								</div>
+								<div class="infocv">
+									<li>Solteiro, 20 anos</li>
+									<li>Av. Leonildo Guerra, 60 - Vila Rocca</li>
+									<li>Guariba-SP - 14840-000</li>
+									<li>Cel: <a href="16996135250">(16) 9 9613-5250 </a>E-mail: <a href="mailto: abnerndr@gmail.com">abnerndr@gmail.com</a></li>
+									<div class="iconcv"><a href="https://www.linkedin.com/in/abner-andr%C3%A9-ananias-423a641a2/">
+										<i class="fab fa-linkedin fa-2x"></i></a>
+										<a href="https://github.com/abnerndr">
+										<i id="github" class="fab fa-github-square fa-2x"></i></a>
+									</div>
+									<div class="flextitulo">
+									<div class="titulo1">
+                                    <h6>Formação</h6>
+									<li><hr id="divider" class="dropdown-divider"></li>
+									<li>▪ Técnico em Informática - Completo (ETEC Bento Carlos Botelhor do Amaral)</li>
+									<li>▪ Web Design - Completo (<a href="">Origamid</a>) </li>
+									<li>▪ Bootstrap 4 - Completo (<a href="">Origamid</a>) </li>
+									<li>▪ ReactJS - Completo (<a href="">Origamid</a>) </li>
+									</div>
+									<div class="titulo2">
+							        <h6>Experiência e Qualificações</h6>
+									<li><hr class="dropdown-divider"></li>
+									<li>▪ Autonomo - Web Design (02/2021 - 10/2021)</li>
+									<span>Principais atividades realizadas: Desenvolvimento Web, linguagens usadas: HTML5, CSS3,              
+										JavaScript, NextJS, Bootstrap.
+									   </span>
+									<li>▪ Aux. Técnico em TI - Temis Informatica (03/2019 - 01/2021)</li>
+									<span>Principais atividades realizadas na empresa: Manutenção de Computadores, Suporte 
+										Técnico, Suporte de redes.
+										</span>
+									</div>
+								</div>
+								</div>		
+								<div class="downcv">
+									<li>Faça o download do curriculo completo</li>
+								<a href="/public/Curriculo.docx" download="Curriculo_Abner">Download</a></div>
+							</div>
+						</div>
+					
+						</div>
+					</div>
+					<!--Curriculo END-->
+					<footer class="dark">
+						<div class="links nlight">
+							<i class="fab fa-linkedin fa-2x"></i>
+							<i class="fab fa-facebook-square fa-2x"></i>
+							<i class="fab fa-github-square fa-2x"></i>
+							<i class="fab fa-whatsapp-square fa-2x"></i>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</main>
+		
+	
+	
+
+		<!--JAVASCRIPT-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+			integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+			crossorigin="anonymous"
+		></script>
+		<script src="src/theme.js"></script>
+		<script src="src/menu.js"></script>
+		<script src="src/scroll.js"></script>
+		<script src="src/accordion.js"></script>
+	</body>
+</html>

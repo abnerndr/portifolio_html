@@ -1,0 +1,501 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 1900px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f9f9f9;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #191919;
+}
+/*Theme Reverse*/
+.nlight {
+  background-color: #191919;
+  color: #f5f5f5;
+  animation: ease-in-out;
+  transition: all 0.5s;
+}
+.ndark {
+  background-color: #f5f5f5;
+  color: #191919;
+  animation: ease-in-out;
+  transition: all 0.5s;
+}
+
+/*NAVBAR*/
+nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  text-transform: uppercase;
+  margin-left: 30px;
+  list-style: none;
+}
+
+ul li:last-child {
+  margin-left: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #f9f9f9;
+  opacity: 1;
+}
+
+ul li a:hover {
+  color: #b871ff;
+}
+/*Nav Dropdawn*/
+.dropdown button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: 15px;
+  background-color: #7e03f9;
+  color: white;
+  text-transform: uppercase;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  animation: ease-in-out;
+  transition: all 0.1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #191919;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #b871ff;
+}
+
+.dropdown-content input {
+  padding: 12px 16px;
+  display: block;
+  color: #191919;
+  text-align: left;
+  width: 100%;
+}
+.dropdown-content input:hover {
+  background-color: #f1f1f1;
+  color: #b871ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #b871ff;
+}
+.menu-mobile {
+  display: none;
+}
+
+/*CONTEUDO*/
+main {
+  padding: 70px 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+main .hometitle {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40%;
+  margin-left: 25px;
+}
+main .hometitle h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-bottom: -15px;
+}
+main .hometitle span {
+  font-size: 26px;
+  margin-left: -30px;
+}
+main .hometitle .barra {
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  left: 10px;
+  top: 73px;
+}
+
+main .homeimage img {
+  position: relative;
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 92.5%;
+  margin-top: -5%;
+}
+
+/*ATIVIDADES (CONHECIMENTOS E HABILIDADES)*/
+.bgatividades {
+  position: absolute;
+  width: 99.1vw;
+  height: 110vh;
+}
+
+.bgatividades .titulo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.bgatividades .titulo h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+/*Progress BG*/
+.progress .bg-orange {
+  background-color: #fd7e14 !important;
+}
+.progress .bg-blue {
+  background-color: #0d6efd !important;
+}
+.progress .bg-roxo {
+  background-color: #6610f2;
+}
+.progress .bg-rosadark {
+  background-color: #ab296a;
+}
+.progress .bg-js {
+  background-color: #ffc107;
+}
+.progress .bg-jquery {
+  background-color: #0a58ca;
+}
+.progress .bg-vue {
+  background-color: #3fb27f;
+}
+.progress .bg-python {
+  background: linear-gradient(to right, #ffd43b, #ffe873, #4b8bbe, #306998);
+}
+.progress .bg-react {
+  background-color: #61dafb;
+}
+.progress .bg-next {
+  background: linear-gradient(to right, #5a6190, #f6b4b8);
+}
+.progress .bg-reactnative {
+  background-color: #61dafb;
+}
+.progress .bg-angular {
+  background-color: #d6002f;
+}
+.progress .bg-git {
+  background-color: #f34f29;
+}
+.progress .bg-github {
+  background-color: #6e2c87;
+}
+.progress .bg-wpd {
+  background-color: #006e92;
+}
+.progress .bg-npm {
+  background-color: #c13534;
+}
+.progress .bg-psd {
+  background-color: #2e9ff2;
+}
+.progress .bg-ai {
+  background-color: #f29200;
+}
+.progress .bg-corel {
+  background-color: #5c9e06;
+}
+
+/*ABOUT*/
+.about {
+  margin-top: 20%;
+}
+.about img {
+  position: relative;
+  margin-top: -80%;
+  margin-left: 220%;
+  margin-bottom: 40%;
+  border-radius: 10px;
+  width: 350px;
+}
+
+/*CURRICULO*/
+.curriculo {
+  position: absolute;
+  margin-left: -6%;
+  width: 95%;
+  height: 110vh;
+  border-radius: 20px;
+}
+
+.curriculo .titlename h5 {
+  font-size: 3rem;
+}
+
+.infocv li {
+  margin-top: 5px;
+  list-style: none;
+}
+.infocv li a {
+  text-decoration: none;
+  color: #b871ff;
+  animation: ease-in-out;
+  transition: all 0.5s;
+}
+.infocv li a:hover {
+  color: #7e03f9;
+}
+.infocv .iconcv {
+  margin-top: 5px;
+}
+.iconcv a i[id="github"] {
+  margin-left: 5px;
+}
+.iconcv a i {
+  color: #f9f9f9;
+  animation: ease-in-out;
+  transition: all 0.5s;
+}
+.iconcv a i:hover {
+  color: #b871ff;
+}
+.flextitulo {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+.flextitulo .titulo1 {
+  width: 60%;
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flextitulo .titulo2 {
+  margin-top: 7%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.titulo2 li {
+  font-weight: bold;
+}
+
+.downcv {
+  text-align: center;
+  padding: 60px 0;
+}
+.downcv li {
+  list-style: none;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.downcv a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f9f9f9;
+  border: 3px solid #b871ff;
+  background-color: #b871ff;
+  animation: ease-in-out;
+  transition: all 0.6s;
+}
+.downcv a:hover {
+  border: 3px solid #7e03f9;
+  background-color: #7e03f9;
+  color: #f9f9f9;
+}
+
+/*FOOTER*/
+footer {
+  position: relative;
+  margin-top: 60%;
+  width: 99.1vw;
+  height: 60px;
+}
+footer .links {
+  display: flex;
+  padding: 12px 0;
+  justify-content: center;
+}
+.links i {
+  margin-left: 5px;
+}
+/*RESPONSIVO 500px*/
+
+@media only screen and (max-width: 500px) {
+  /*NAVBAR*/
+
+  nav,
+  ul {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .bar-mobile {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 80px;
+    background-color: #191919;
+  }
+  /*checkbox*/
+  .menu-check input {
+    visibility: hidden;
+    position: relative;
+    width: 100vw;
+  }
+  .menu-check span {
+    width: 40px;
+    height: 40px;
+    margin-top: -8px;
+    float: right;
+    display: block;
+    background: url("/public/menu.svg");
+    animation: ease-in-out;
+    transition: all 0.5s;
+  }
+  .menu-check input:checked + span {
+    background: url("/public/close.svg");
+  }
+  /*checkbox*/
+  .menu-mobile {
+    display: flex;
+    position: relative;
+    z-index: 999;
+    width: 70%;
+    height: 100vh;
+    margin-bottom: -70vh;
+  }
+
+  .menu-mobile {
+    transform: translateX(-100%);
+    animation: ease-in-out;
+    transition: all 0.6s;
+  }
+  .menu-mobile-active {
+    transform: translateX(-0px);
+  }
+  div .ul {
+    padding: 80px 25%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .ul li {
+    list-style: none;
+    margin-top: 30px;
+  }
+  .ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+  }
+  .dropdown button {
+    width: 200px;
+    height: 40px;
+    margin-left: 0px;
+  }
+  .dropbtn {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+
+  /*CONTEUDO*/
+  main {
+    padding: 70px 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+  }
+
+  main .hometitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 15%;
+  }
+  main .hometitle h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: -15px;
+  }
+  main .hometitle span {
+    font-size: 26px;
+    margin-left: -30px;
+  }
+  main .hometitle .barra {
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    left: 10px;
+    top: 73px;
+  }
+
+  main .homeimage img {
+    display: none;
+  }
+}
